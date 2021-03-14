@@ -492,8 +492,16 @@ PRODUCT_PACKAGES += \
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
     libaacwrapper \
+    libmediaextractorservice \
     libnl \
-    libmediaextractorservice
+    libwfdaac \
+    libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Inherit QCOM display dependencies.
+$(call inherit-product-if-exists, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
+
+# Get non-open-source specific aspects
+$(call inherit-product-if-exists, vendor/qcom/common/wfd/wfd-vendor.mk)

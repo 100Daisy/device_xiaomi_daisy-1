@@ -2,9 +2,6 @@ Personal file with notes
 
 TODO:
 - Fix WFD
-- Fix CAMERA HAL Switcher
-	Maybe add persist.vendor.camera.HAL3.enabled=1
-	Logs seem to indicate that it is denied by selinux/sepolicy but no denied logs
 - Fix LED notifications
 - CTS status fix
 - Check VoWIFI/VoLTE working
@@ -17,3 +14,4 @@ TODO:
 Done:
 - 02/03/2021 Hotspot works
 - 02/03/2021 Wireless ADB works
+- 12/03/2021 Camera HAL1/HAL3 works
