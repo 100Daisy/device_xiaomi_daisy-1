@@ -220,4 +220,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/daisy/BoardConfigVendor.mk
+-include vendor/xiaomi2/daisy/BoardConfigVendor.mk
